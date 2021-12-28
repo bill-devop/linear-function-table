@@ -2,7 +2,7 @@
 <html lang='en-US'>
     <head>
         <meta charset='uft-8'>
-        <title>JS Tables</title>
+        <title>Exponential Functions with JS</title>
         <style>
             main {
                 width: 100%;
@@ -36,7 +36,7 @@
     
     <main>
         <header>
-            <h1>Linear Function Table</h1>
+            <h1>Exponential Function Table</h1>
         </header>
         <body>
             <p>Enter values for 'x' below to get the 'y' values based
@@ -48,7 +48,7 @@
                 <tr>
                     <th>x</th>
                     <th>y</th>
-                    <th>y = 2x</th>
+                    <th>y = 2x<sup>2</sup></th>
                 </tr>
 
             </table>
@@ -67,7 +67,7 @@
 
                 function calcY() {
                     const xVal = parseFloat(input.value)
-                    const yVal = 2 * xVal;
+                    const yVal = 2 * (xVal ** 2);
                     return yVal;
                 }
 
@@ -94,7 +94,7 @@
                     mode: 'lines'
                 }];
 
-                let layout = {title: 'y = 2x'};
+                let layout = {title: 'y = 2x^2'};
 
                 Plotly.newPlot('linearPlot', data, layout);
 
